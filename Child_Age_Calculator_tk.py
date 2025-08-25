@@ -65,7 +65,7 @@ output_Results = tk.IntVar()
 output_label = ttk.Label(master=output_Frame, text="Child's Age: ", font="Calibri 14")
 output_label.pack(side=tk.LEFT, pady=40)
 
-output_label2 = ttk.Label(master=output_Frame, font="Calibri 15", textvariable=output_Results, foreground="blue")
+output_label2 = ttk.Label(master=output_Frame, font="Calibri 15", textvariable=output_Results, foreground="White")
 output_label2.pack(side=tk.LEFT, padx=10)
 
 output_label3 = ttk.Label(master=output_Frame, text = "Years Old", font="Calibri 14")
