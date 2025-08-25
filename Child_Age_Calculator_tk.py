@@ -32,7 +32,7 @@ def calculate_age():
 birthdate_label = ttk.Label(master=window, text="Enter Birthdate:", font="Calibri 20 bold")
 birthdate_label.pack(anchor='nw', pady=10) 
 
-# Birthday Input Framework
+# Birthday Input Framework ================================================================
 input_frame = ttk.Frame(master=window)
 
 entry_bdyear = tk.IntVar()
@@ -57,7 +57,7 @@ entry3.pack(side=tk.LEFT, padx=10)
 
 input_frame.pack(anchor='nw', pady=10)
  
-# Output Framework
+# Output Framework ========================================================================
 output_Frame = ttk.Frame(master=window)
 
 output_Results = tk.IntVar()
@@ -73,7 +73,7 @@ output_label3.pack(side=tk.LEFT, padx=10)
 
 output_Frame.pack(anchor = 'w', pady=10)
 
-# Button Framework
+# Button Framework =========================================================================
 button_frame = ttk.Frame(master=window)
 
 button1 = ttk.Button(master=button_frame, text="Calculate", command=calculate_age)
@@ -89,6 +89,6 @@ button_frame.pack(anchor = 's', pady=10)
 
 
 
-# Run Applications =======================================
+# Run Applications ========================================================================
 window.mainloop()
 print("\nGood-Bye\nApplication Terminated")
