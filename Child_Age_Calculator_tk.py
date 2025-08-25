@@ -25,8 +25,14 @@ def calculate_age():
 
        # Make Calculations
        age_output = int((today - birthdate).days / 365.25)
+       
+       # If over the age of 18, turn the lable "red"
+       if age_output >= 18:
+              output_label2.config(foreground="red")
+       else:
+              output_label2.config(foreground="white")
 
-       output_Results.set(age_output)
+       output_Results.set(age_output)       
 
 
 birthdate_label = ttk.Label(master=window, text="Enter Birthdate:", font="Calibri 20 bold")
@@ -65,7 +71,11 @@ output_Results = tk.IntVar()
 output_label = ttk.Label(master=output_Frame, text="Child's Age: ", font="Calibri 14")
 output_label.pack(side=tk.LEFT, pady=40)
 
-output_label2 = ttk.Label(master=output_Frame, font="Calibri 15", textvariable=output_Results, foreground="White")
+output_label2 = ttk.Label(master=output_Frame, 
+                          font="Calibri 15", 
+                          textvariable=output_Results, 
+                          foreground="White"
+                          )
 output_label2.pack(side=tk.LEFT, padx=10)
 
 output_label3 = ttk.Label(master=output_Frame, text = "Years Old", font="Calibri 14")
@@ -79,7 +89,14 @@ button_frame = ttk.Frame(master=window)
 button1 = ttk.Button(master=button_frame, text="Calculate", command=calculate_age)
 button1.pack(side=tk.LEFT, padx=10)
 
-button2 = ttk.Button(master=button_frame, text="Clear", command=lambda: (entry_bdday.set(0), entry_bdmonth.set(0), entry_bdyear.set(0), output_Results.set(0)))
+button2 = ttk.Button(master=button_frame, 
+                     text="Clear", 
+                     command=lambda: (output_label2.config(foreground="white"), 
+                                      entry_bdday.set(0), 
+                                      entry_bdmonth.set(0), 
+                                      entry_bdyear.set(0), 
+                                      output_Results.set(0))
+                     )
 button2.pack(side=tk.LEFT, padx=10)
 
 button3 = ttk.Button(master=button_frame, text="Close", command=window.destroy)
