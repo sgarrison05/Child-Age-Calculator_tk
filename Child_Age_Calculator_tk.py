@@ -45,20 +45,20 @@ entry_bdyear = tk.IntVar()
 entry_bdmonth = tk.IntVar()
 entry_bdday = tk.IntVar()
 
-entry1 = ttk.Entry(master=input_frame, width=4, textvariable=entry_bdmonth)
+entry1 = ttk.Entry(master=input_frame, width=4, textvariable=entry_bdmonth, font="Calibri 16")
 entry1.pack(side=tk.LEFT, padx=10)
 
 label1 = ttk.Label(master=input_frame, text="/", font="Calibri 16")
 label1.pack(side=tk.LEFT)
 
-entry2 = ttk.Entry(master=input_frame, width=4, textvariable=entry_bdday)
+entry2 = ttk.Entry(master=input_frame, width=4, textvariable=entry_bdday, font="Calibri 16")
 entry2.pack(side=tk.LEFT, padx=10)
 
 
 label2 = ttk.Label(master=input_frame, text="/", font="Calibri 16")
 label2.pack(side=tk.LEFT)
 
-entry3 = ttk.Entry(master=input_frame, width=4, textvariable=entry_bdyear)
+entry3 = ttk.Entry(master=input_frame, width=4, textvariable=entry_bdyear, font="Calibri 16")
 entry3.pack(side=tk.LEFT, padx=10)
 
 input_frame.pack(anchor='nw', pady=10)
