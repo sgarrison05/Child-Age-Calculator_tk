@@ -86,10 +86,10 @@ output_Frame.pack(anchor = 'w', pady=10)
 # Button Framework =========================================================================
 button_frame = ttk.Frame(master=window)
 
-button1 = ttk.Button(master=button_frame, text="Calculate", command=calculate_age)
+button1 = ttk.Button(master=button_frame, width=9, text="Calculate", command=calculate_age)
 button1.pack(side=tk.LEFT, padx=10)
 
-button2 = ttk.Button(master=button_frame, 
+button2 = ttk.Button(master=button_frame, width=9, 
                      text="Clear", 
                      command=lambda: (output_label2.config(foreground="white"), 
                                       entry_bdday.set(0), 
@@ -99,7 +99,7 @@ button2 = ttk.Button(master=button_frame,
                      )
 button2.pack(side=tk.LEFT, padx=10)
 
-button3 = ttk.Button(master=button_frame, text="Close", command=window.destroy)
+button3 = ttk.Button(master=button_frame, width=9, text="Close", command=window.destroy)
 button3.pack(side=tk.LEFT, padx=10)
 
 button_frame.pack(anchor = 's', pady=10)
