@@ -60,7 +60,8 @@ button_frame = ttk.Frame(window)
 button1 = ttk.Button(button_frame, width=9, text="Calculate", command=calculate_age)
 button1.pack(side=tk.LEFT, padx=10)
 
-button2 = ttk.Button(button_frame, width=9, text="Clear", command=lambda: (output_Results.set(0), cal.set_date(date.today())))                     
+button2 = ttk.Button(button_frame, width=9, text="Clear", 
+                     command=lambda: (output_Results.set(0), cal.set_date(date.today())))                     
 button2.pack(side=tk.LEFT, padx=10)
 
 button3 = ttk.Button(button_frame, width=9, text="Close", command=window.destroy)
