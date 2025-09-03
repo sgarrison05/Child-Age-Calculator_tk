@@ -1,7 +1,7 @@
 # Child Age Calculator Written for tkinter
 # by Shon Garrison
 # Created on: Aug 21, 2025
-# Updated on: Aug 2025
+# Updated on: Sept 2025
 
 import tkinter as tk
 from tkinter import ttk
@@ -9,7 +9,7 @@ from datetime import date
 from tkcalendar import DateEntry
 
 window = tk.Tk()
-window.geometry("373x299")
+window.geometry("400x300")
 window.title("Child Age Calculator")
 #window.style = Style(theme='darkly')
 
